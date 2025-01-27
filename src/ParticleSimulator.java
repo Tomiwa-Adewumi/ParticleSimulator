@@ -152,6 +152,7 @@ public class ParticleSimulator {
                     grid[newRow][newCol] = ParticleType.STEAM; // Turn water into steam
                 } else if (grid[newRow][newCol] == ParticleType.GLASS) {
                     // Fire interacts with glass but does not disappear
+                    grid[newRow][newCol] = ParticleType.GLASS;
 
                 } else if (grid[newRow][newCol] == ParticleType.METAL) {
                     // Fire interacts with metal but does not disappear
